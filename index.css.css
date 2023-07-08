@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  background: #fff;
+}
+.wrapper {
+  padding: 5px;
+  max-width: 960px;
+  width: 95%;
+  margin: 20px auto;
+}
+header {
+  padding: 0 15px;
+  text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+.column {
+  flex: 1;
+  border: 3px solid black;
+  margin: 5px;
+  padding-left: 5px;
+  background: gray;
+}
+h2 {
+  float: right;
+  border: 2px solid black;
+  width: 60px;
+  margin-top: 0;
+  font-size: 16px;
+  padding-right: 0;
+  padding: 10px;
+}
+#chi {
+  background: rgba(255, 192, 203, 0.623);
+}
+#bef {
+  color: #fff;
+  background: rgba(255, 0, 0, 0.438);
+}
+#sus {
+  background: rgba(255, 255, 0, 0.596);
+}
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+  }
+  .columns .column:last-child {
+    flex-basis: 100%;
+    margin: 0;
+  }
+  .columns .column:last-child(2) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
